@@ -53,7 +53,7 @@
             var authenticationWrapper = new AuthenticationWrapper(this.AuthenticationProvider);
             this.NotificationProcessor = new NotificationProcessor(authenticationWrapper, this.Serializer);
             this.NotificationProcessor.OnNotificationReceived += this.NotificationProcessor_OnNotificationReceived;
-            this.RequestBuilder = new GraphServiceClient(options.PlaceCllEndpointUrl.AbsoluteUri, authenticationWrapper);
+            this.RequestBuilder = new GraphServiceClient(options.PlaceCallEndpointUrl.AbsoluteUri, authenticationWrapper);
 
             var defaultProperties = new List<IGraphProperty<IEnumerable<string>>>();
             using (HttpClient tempClient = GraphClientFactory.Create(authenticationWrapper))
@@ -166,7 +166,9 @@
                 }
                 else
                 {
-                    var httpResponse = httpRequest.CreateResponse(HttpStatusCode.Forbidden);
+                    // This way is not working. Demands further investigation
+                    //var httpResponse = httpRequest.CreateResponse(HttpStatusCode.Forbidden);
+                    var httpResponse = new HttpResponseMessage(HttpStatusCode.Forbidden);
                     await httpResponse.CreateHttpResponseAsync(response).ConfigureAwait(false);
                 }
 
@@ -267,7 +269,7 @@
                 new KeyValuePair<string, IEnumerable<string>>(HttpConstants.HeaderNames.Tenant, new[] {args.TenantId }),
             };
 
-            var notifications = new CommsNotification { Value = new[] { args.Notification } };
+            var notifications = new CommsNotifications { Value = new[] { args.Notification } };
             var obfuscatedContent = this.GraphLogger.SerializeAndObfuscate(notifications, Formatting.Indented);
             this.GraphLogger.LogHttpMessage(
                 TraceLevel.Info,
