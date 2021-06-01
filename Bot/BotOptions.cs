@@ -16,6 +16,6 @@
 
         public Uri BotBaseUrl { get; set; }
 
-        public Uri PlaceCllEndpointUrl { get; set; }
+        public Uri PlaceCallEndpointUrl { get; set; }
     }
 }
