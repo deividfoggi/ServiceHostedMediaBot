@@ -1,0 +1,114 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dfoggi\\GitHub\\ServiceHostedMediaBot\\ServiceHostedMediaBot.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dfoggi\\GitHub\\ServiceHostedMediaBot\\ServiceHostedMediaBot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dfoggi\\GitHub\\ServiceHostedMediaBot\\ServiceHostedMediaBot.csproj",
+        "projectName": "ServiceHostedMediaBot",
+        "projectPath": "C:\\Users\\dfoggi\\GitHub\\ServiceHostedMediaBot\\ServiceHostedMediaBot.csproj",
+        "packagesPath": "C:\\Users\\dfoggi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dfoggi\\GitHub\\ServiceHostedMediaBot\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dfoggi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.Fast.Components.FluentUI": {
+              "target": "Package",
+              "version": "[0.2.0, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[3.33.0, )"
+            },
+            "Microsoft.Graph.Communications.Calls": {
+              "target": "Package",
+              "version": "[1.2.0.1702, )"
+            },
+            "Microsoft.Graph.Communications.Client": {
+              "target": "Package",
+              "version": "[1.2.0.1702, )"
+            },
+            "Microsoft.Graph.Communications.Common": {
+              "target": "Package",
+              "version": "[1.2.0.1702, )"
+            },
+            "Microsoft.Graph.Communications.Core": {
+              "target": "Package",
+              "version": "[1.2.0.1702, )"
+            },
+            "Microsoft.IdentityModel.Clients.ActiveDirectory": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Microsoft.TeamsFx.SimpleAuth": {
+              "target": "Package",
+              "version": "[0.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

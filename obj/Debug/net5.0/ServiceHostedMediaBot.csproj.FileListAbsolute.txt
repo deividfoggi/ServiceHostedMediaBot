@@ -1,0 +1,15 @@
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\ServiceHostedMediaBot.csprojAssemblyReference.cache
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\ServiceHostedMediaBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\ServiceHostedMediaBot.AssemblyInfoInputs.cache
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\ServiceHostedMediaBot.AssemblyInfo.cs
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\ServiceHostedMediaBot.csproj.CoreCompileInputs.cache
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\ServiceHostedMediaBot.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\ServiceHostedMediaBot.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\ServiceHostedMediaBot.RazorComponent.input.cache
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\RazorDeclaration\Pages\TabConfig.razor.g.cs
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\RazorDeclaration\Pages\Tab.razor.g.cs
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\dfoggi\GitHub\ServiceHostedMediaBot\ServiceHostedMediaBot\obj\Debug\net5.0\ServiceHostedMediaBot.RazorComponent.output.cache

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHostedMediaBot", "ServiceHostedMediaBot.csproj", "{EC77C0B1-C6C8-438D-8C98-793FF86D82DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC77C0B1-C6C8-438D-8C98-793FF86D82DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC77C0B1-C6C8-438D-8C98-793FF86D82DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC77C0B1-C6C8-438D-8C98-793FF86D82DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC77C0B1-C6C8-438D-8C98-793FF86D82DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A886AB08-534B-4706-A567-D4F8B5E5E2CD}
+	EndGlobalSection
+EndGlobal

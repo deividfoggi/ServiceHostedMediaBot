@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\dfoggi\.nuget\packages\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.9.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\dfoggi\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)microsoft.teamsfx.simpleauth\0.1.0\contentFiles\any\netcoreapp3.1\appsettings.Development.json" Condition="Exists('$(NuGetPackageRoot)microsoft.teamsfx.simpleauth\0.1.0\contentFiles\any\netcoreapp3.1\appsettings.Development.json')">
+      <NuGetPackageId>Microsoft.TeamsFx.SimpleAuth</NuGetPackageId>
+      <NuGetPackageVersion>0.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>appsettings.Development.json</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)microsoft.teamsfx.simpleauth\0.1.0\contentFiles\any\netcoreapp3.1\appsettings.json" Condition="Exists('$(NuGetPackageRoot)microsoft.teamsfx.simpleauth\0.1.0\contentFiles\any\netcoreapp3.1\appsettings.json')">
+      <NuGetPackageId>Microsoft.TeamsFx.SimpleAuth</NuGetPackageId>
+      <NuGetPackageVersion>0.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>appsettings.json</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)microsoft.teamsfx.simpleauth\0.1.0\contentFiles\any\netcoreapp3.1\runtimeconfig.template.json" Condition="Exists('$(NuGetPackageRoot)microsoft.teamsfx.simpleauth\0.1.0\contentFiles\any\netcoreapp3.1\runtimeconfig.template.json')">
+      <NuGetPackageId>Microsoft.TeamsFx.SimpleAuth</NuGetPackageId>
+      <NuGetPackageVersion>0.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>runtimeconfig.template.json</Link>
+    </Content>
+  </ItemGroup>
+</Project>

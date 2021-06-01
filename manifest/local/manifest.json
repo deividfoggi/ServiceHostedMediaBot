@@ -1,0 +1,59 @@
+{
+   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+   "version": "1.0.0",
+   "manifestVersion": "1.9",
+   "id": "{{{client-id}}}",
+   "packageName": "com.microsoft.teams.extension",
+   "name": {
+      "short": "{{{app-name}}}",
+      "full": "This field is not used"
+   },
+   "developer": {
+      "name": "Teams App, Inc.",
+      "mpnId": "",
+      "websiteUrl": "{{{endpoint}}}",
+      "privacyUrl": "{{{endpoint}}}/privacy",
+      "termsOfUseUrl": "{{{endpoint}}}/termsofuse"
+   },
+   "description": {
+      "short": "Short description for {{{app-name}}}.",
+      "full": "Full description of {{{app-name}}}."
+   },
+   "icons": {
+      "outline": "outline.png",
+      "color": "color.png"
+   },
+   "accentColor": "#FFFFFF",
+   "configurableTabs": [
+      {
+         "configurationUrl": "{{{endpoint}}}/config",
+         "canUpdateConfiguration": true,
+         "scopes": [
+            "team",
+            "groupchat"
+         ]
+      }
+   ],
+   "staticTabs": [
+      {
+         "entityId": "index",
+         "name": "Personal Tab",
+         "contentUrl": "{{{endpoint}}}/tab",
+         "websiteUrl": "{{{endpoint}}}/tab",
+         "scopes": [
+            "personal"
+         ]
+      }
+   ],
+   "validDomains": [
+      "{{{domain}}}"
+   ],
+   "permissions": [
+      "identity",
+      "messageTeamMembers"
+   ],
+   "webApplicationInfo": {
+      "id": "{{{client-id}}}",
+      "resource": "{{{application-id-uri}}}"
+   }
+}
