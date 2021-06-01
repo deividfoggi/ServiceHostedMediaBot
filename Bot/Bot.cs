@@ -21,13 +21,14 @@
     using Microsoft.Graph.Communications.Core.Serialization;
     using Newtonsoft.Json;
     using ServiceHostedMediaBot.Common;
-    using ServiceHostedMediaBot.Transport;
     using ServiceHostedMediaBot.Authentication;
+    using ServiceHostedMediaBot.Transport;
     using ServiceHostedMediaBot.Data;
     using ServiceHostedMediaBot.Controller;
     using ServiceHostedMediaBot.Extensions;
     using Microsoft.Graph.Communications.Client;
     using System.IO;
+    using System.Threading;
 
     public class Bot
     {
@@ -53,7 +54,7 @@
             var authenticationWrapper = new AuthenticationWrapper(this.AuthenticationProvider);
             this.NotificationProcessor = new NotificationProcessor(authenticationWrapper, this.Serializer);
             this.NotificationProcessor.OnNotificationReceived += this.NotificationProcessor_OnNotificationReceived;
-            this.RequestBuilder = new GraphServiceClient(options.PlaceCllEndpointUrl.AbsoluteUri, authenticationWrapper);
+            this.RequestBuilder = new GraphServiceClient(options.PlaceCallEndpointUrl.AbsoluteUri, authenticationWrapper);
 
             var defaultProperties = new List<IGraphProperty<IEnumerable<string>>>();
             using (HttpClient tempClient = GraphClientFactory.Create(authenticationWrapper))
@@ -166,7 +167,9 @@
                 }
                 else
                 {
-                    var httpResponse = httpRequest.CreateResponse(HttpStatusCode.Forbidden);
+                    // Following line not working???
+                    // var httpResponse = httpRequest.CreateResponse(HttpStatusCode.Forbidden);
+                    var httpResponse = new HttpResponseMessage(HttpStatusCode.Forbidden);
                     await httpResponse.CreateHttpResponseAsync(response).ConfigureAwait(false);
                 }
 
@@ -252,9 +255,11 @@
 
         private void NotificationProcessor_OnNotificationReceived(NotificationEventArgs args)
         {
+#pragma warning disable 4014
             this.NotificationProcessor_OnNotificationReceivedAsync(args).ForgetAndLogExceptionAsync(
                 this.GraphLogger,
                 $"Error processing notification {args.Notification.ResourceUrl} with scenario {args.ScenarioId}");
+#pragma warning restore 4014
         }
 
         private async Task NotificationProcessor_OnNotificationReceivedAsync(NotificationEventArgs args)
@@ -267,7 +272,7 @@
                 new KeyValuePair<string, IEnumerable<string>>(HttpConstants.HeaderNames.Tenant, new[] {args.TenantId }),
             };
 
-            var notifications = new CommsNotification { Value = new[] { args.Notification } };
+            var notifications = new CommsNotifications { Value = new[] { args.Notification } };
             var obfuscatedContent = this.GraphLogger.SerializeAndObfuscate(notifications, Formatting.Indented);
             this.GraphLogger.LogHttpMessage(
                 TraceLevel.Info,
